@@ -8,8 +8,13 @@ stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Middlewares/Third_Party/Free
 stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
 stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h
 stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
+stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
 stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Core/Inc/main.h
 stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Core/Inc/stm32f1xx_hal_conf.h
@@ -37,9 +42,7 @@ stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Drivers/STM32F1xx_HAL_Driver
 stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
-stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
-stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
-stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
-stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
-stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
 stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Core/Inc/adc.h
+stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Core/Inc/usart.h
+stm32f103c8t6_thinfilmpressuresensor\freertos.o: C:\Users\liliput\AppData\Local\Keil_v5\ARM\ARMCC\include\stdbool.h
+stm32f103c8t6_thinfilmpressuresensor\freertos.o: ../Core/Src/../../User/hc4051.h

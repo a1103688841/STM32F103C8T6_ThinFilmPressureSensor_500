@@ -29,6 +29,8 @@
 #include "stm32f103xb.h"
 #include "usart.h"
 #include <stdint.h>
+#include <stdbool.h>
+#include "../../User/hc4051.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -154,8 +156,6 @@ void StartDefaultTask(void const* argument)
  * @param argument: Not used
  * @retval None
  */
-#include "../User/hc4051.h"
-// 定义设置高低电平的函�?
 void set_ic1_s0(bool state)
 {
     HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, state ? GPIO_PIN_SET : GPIO_PIN_RESET);
@@ -272,13 +272,13 @@ void StartTask02(void const* argument)
         {
             machine_state.hc4051_ic5_channel = 0;
         }
-        hc4051_set_channel(&HC4051_ic1, machine_state.hc4051_ic1_channel);
-        hc4051_set_channel(&HC4051_ic2, machine_state.hc4051_ic2_channel);
-        hc4051_set_channel(&HC4051_ic3, machine_state.hc4051_ic3_channel);
-        hc4051_set_channel(&HC4051_ic4, machine_state.hc4051_ic4_channel);
-        hc4051_set_channel(&HC4051_ic5, machine_state.hc4051_ic5_channel);
+        hc4051_selectChannel(&HC4051_ic1, machine_state.hc4051_ic1_channel);
+        hc4051_selectChannel(&HC4051_ic2, machine_state.hc4051_ic2_channel);
+        hc4051_selectChannel(&HC4051_ic3, machine_state.hc4051_ic3_channel);
+        hc4051_selectChannel(&HC4051_ic4, machine_state.hc4051_ic4_channel);
+        hc4051_selectChannel(&HC4051_ic5, machine_state.hc4051_ic5_channel);
         HAL_ADC_Start_DMA(&hadc1, (uint32_t*)machine_state.dma_adc, 5);
-        osDelay(pdMS_TO_TICKS(10));
+        osDelay(pdMS_TO_TICKS(100));
     }
     /* USER CODE END StartTask02 */
 }
